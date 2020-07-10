@@ -14,4 +14,4 @@ workshop.add_participant(attendee)
 workshop.print_details()
 ```
 
-- run the __init__.py file to print sampels
+- run the __init__.py file to print samples
