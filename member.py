@@ -14,7 +14,12 @@ class Member(ABC):
         pass
 
 class Instructor(Member):
-
+    """     
+    Attributes: 
+        name (str): Full name of Instructor. 
+        bio (str): bio of Instructor. 
+        skills (list): List of skills. 
+    """
     def __init__(self, name, bio, skills=None):
         super(Instructor, self).__init__(name)
         self.bio = bio
@@ -41,7 +46,11 @@ class Instructor(Member):
             '''.format(self.name, self.bio)
 
 class Attendee(Member):
-
+    """     
+    Attributes: 
+        name (str): Full name of Attendee. 
+        reason (str): Reason for attending the workshop. 
+    """
     def __init__(self, name, reason):
         super(Attendee, self).__init__(name)
         self.reason = reason

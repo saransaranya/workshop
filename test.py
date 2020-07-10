@@ -96,7 +96,5 @@ class TestWorkshop(unittest.TestCase):
         with self.assertRaises(Exception) as e:
             workshop.add_participant(instructor2)
 
-        workshop.print_details()
-
 if __name__ == '__main__':
     unittest.main()
